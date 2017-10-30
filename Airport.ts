@@ -1,3 +1,25 @@
+enum SurfaceTypes {
+	ASP = 'Asphalt',
+	BIT = 'Bitumenous asphalt or tarmac',
+	BRI = 'Bricks',
+	CLA = 'Clay',
+	COM = 'Composite',
+	COR = 'Coral',
+	GRE = 'Graded or rolled earth, grass on graded earth',
+	GRS = 'Grass or earth not graded or rolled',
+	GVL = 'Gravel',
+	ICE = 'Ice',
+	LAT = 'Laterite',
+	MAC = 'Macadam',
+	PEM = 'Partially concrete, asphalt or bitumen-bound macadam',
+	PER = 'Permanent surface, details unknown',
+	PSP = 'Marston Matting (derived from pierced/perforated steel planking',
+	SAN = 'Sand',
+	SMT = 'Sommerfeld Tracking',
+	SNO = 'Snow',
+	U = 'Unknown surface'
+}
+
 class Runway {
 
 	//the runway always has 2 names, i.e. rwy18 & rwy36
@@ -20,6 +42,8 @@ class Runway {
 
 	readonly surface: string;
 	readonly length: number;
+
+	private static readonly Surface = SurfaceTypes;
 
 	constructor( theTORA: number, theTODA: number, theASDA: number, theLDA: number, theEMDA: number, theSurface: string, theLength: number ) {
 		this.TORA = theTORA;

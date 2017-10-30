@@ -4,13 +4,17 @@ class Waypoint extends Coordinate {
 	
 	private id: string;
 
-	constructor( public theId: string, theLatitude: number, theLongitude: number ) {
+	constructor( theId: string, theLatitude: number, theLongitude: number ) {
 		super( theLatitude, theLongitude );
 		this.id = theId;
 	}
 
-	public getId () {}
-	public setId ( newId ) {}
+	public getId (): string {
+		return this.id;
+	}
+	public setId ( newId ): void {
+		this.id = newId;
+	}
 }
 
 export { Waypoint };

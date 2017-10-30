@@ -22,23 +22,23 @@ enum SurfaceTypes {
 
 class Runway {
 
-	//the runway always has 2 names, i.e. rwy18 & rwy36
+	//runways always has 2 names, i.e. rwy18 & rwy36
 	private name: string[];
 	
 	//The length of runway declared available and suitable for the ground run of an airplane taking off.
-	readonly TORA: number;
+	private readonly TORA: number;
 
 	//The length of the takeoff run available plus the length of the clearway, if clearway is provided.
-	readonly TODA: number;
+	private readonly TODA: number;
 
 	//The length of the takeoff run available plus the length of the stopway, if stopway is provided.
-	readonly ASDA: number;
+	private readonly ASDA: number;
 
 	//The length of runway that is declared available and suitable for the ground run of an airplane landing.
-	readonly LDA: number;
+	private readonly LDA: number;
 
 	//LDA (or TORA) plus a stopway.
-	readonly EMDA: number;
+	private readonly EMDA: number;
 
 	readonly surface: string;
 	readonly length: number;

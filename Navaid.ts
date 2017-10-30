@@ -1,16 +1,16 @@
 class Navaid {
 	
-	private type: string;
+	private AltitudeCode: string;
 	private class: string;
 	private frequency: number;
-	private AltitudeCode: string;
-	private hoursOfOperation: string;
-	private voideId: boolean;
-	private morseId: string;
-	private stationCallName: string;
-	private notamFacility: string;
 	private fss: any;
 	private fssHoursOfOperation: number;
+	private hoursOfOperation: string;
+	private morseId: string;
+	private notamFacility: string;
+	private stationCallName: string;
+	private type: string;
+	private voiceId: boolean;
 
 	constructor() {}
 }

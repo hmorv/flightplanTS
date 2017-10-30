@@ -1,11 +1,11 @@
 import { Waypoint } from "./Waypoint";
 
-class FlightPlanLine {
-	private waypoint: Waypoint;
-	private frequency: number;
-	private track: number;
+class FlightPlanEntry {
 	private distance: number;
+	private frequency: number;
 	private name: string;
+	private track: number;
+	private waypoint: Waypoint;
 
 	constructor( public w: Waypoint, public f: number, public t: number, public m: number, public n: string ) {
 		this.waypoint = w;
@@ -48,11 +48,11 @@ class FlightPlanLine {
 }
 
 class FlightPlan {
-	private lines: FlightPlanLine[];
+	private lines: FlightPlanEntry[];
 
-	constructor(public theLines: FlightPlanLine[]) {
+	constructor(public theLines: FlightPlanEntry[]) {
 		this.lines = theLines;
 	}
 }
 
-export { FlightPlanLine, FlightPlan };
+export { FlightPlanEntry, FlightPlan };

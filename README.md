@@ -1,4 +1,4 @@
-# H1 FlightPlan TS
+# FlightPlan TS
 
 simple Typescript implementation for a flight planner manager system
 

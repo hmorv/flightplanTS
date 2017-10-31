@@ -20,6 +20,11 @@ enum SurfaceTypes {
 	U = 'Unknown surface'
 }
 
+enum NavigationType {
+	VFR = 'Visual flight rules',
+	IFR = 'Instrumental flight rules';
+}
+
 class Runway {
 
 	//runways always has 2 names, i.e. rwy18 & rwy36
@@ -68,5 +73,11 @@ class Airport {
 		this.data = theData;
 	}
 }
+
+class Gate {}
+
+class Parking {}
+
+class Taxiway {}
 
 export { Runway, Airport };

@@ -23,7 +23,7 @@ enum SurfaceTypes {
 class Runway {
 
 	//runways always has 2 names, i.e. rwy18 & rwy36
-	private name: string[];
+	private readonly name: string[];
 	
 	//The length of runway declared available and suitable for the ground run of an airplane taking off.
 	private readonly TORA: number;
@@ -61,7 +61,12 @@ class Runway {
 }
 
 class Airport {
-	constructor() {}
+	
+	private data: any[];
+
+	constructor( theData: any[] ) {
+		this.data = theData;
+	}
 }
 
 export { Runway, Airport };

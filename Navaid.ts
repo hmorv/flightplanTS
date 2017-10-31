@@ -15,12 +15,32 @@ class Navaid {
 	constructor() {}
 }
 
-class NDB extends Navaid {}
+class NDB extends Navaid {
 
-class VOR extends Navaid {}
+	constructor() {
+		
+	}
+}
 
-class DME extends Navaid {}
+class VOR extends Navaid {
 
-class ILS extends Navaid {}
+	constructor() {
+		
+	}
+}
+
+class DME extends Navaid {
+
+	constructor() {
+		
+	}
+}
+
+class ILS extends Navaid {
+
+	constructor() {
+		
+	}
+}
 
 export { Navaid };

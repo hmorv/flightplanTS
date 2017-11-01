@@ -1,0 +1,5 @@
+class METAR {
+	
+}
+
+export { METAR };
